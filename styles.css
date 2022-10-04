@@ -2,9 +2,9 @@
 
 :root {
  
-    --primary-color:#6d28d9;
+    --black-: #0f172a;
     --dark-grey: #9ca3af;
-    --off-white: #e2e8f0;
+    --blue-: #1d4ed8;
 
 }
 
@@ -41,21 +41,26 @@ hr {
 
     padding: 0.5rem 0.5rem;
     text-decoration: none;
-    color: white
+    color: white;
 }
 
 .link-primary {
 
-    background-color: var(--primary-color);
+    background-color: var(--black-);
     color: white;
     border-radius: 0.5rem;
 }
 
 .link-secondary {
      
-    color: var(--primary-color);
-    border: 1px solid var(--primary-color);
+    color: white;
+    background-color: var(--black-);
     border-radius: 0.5rem;
+}
+
+#btn-centre {
+
+    text-align: center;
 }
 
 /* lists */
@@ -75,21 +80,26 @@ hr {
 
  .navigation-container {
 
-      background-color: var(--primary-color);
+      background-color: var(--black-);
       border-bottom-right-radius: 1rem;
-      padding: 0.5rem 0.5rem;
+      border-bottom-left-radius: 1rem;
+      padding: 2rem 0.5rem;
+      height: 4rem;
 
  }
 
- .navigation-container .nav-brand {
+ .navigation-container .nav-brand{
 
     font-weight: bolder;
+    font-style: italic;
     color: white;
+    font-size: x-large;
  }
 
- .navigation-container .link {
+ .navigation-container .link:hover {
 
     color: white;
+    background-color: var(--blue-);
  }
 
  .navigation-container .link-active {
@@ -97,10 +107,14 @@ hr {
     font-weight: bold;
  }
 
- .navigation-container .nav-pills {
+ .navigation-container .nav-pills{
 
-    text-align: right;
+    text-align: center;
+    font-size: x-large;
+    
  }
+
+
 
  /*header*/
 
@@ -110,25 +124,29 @@ hr {
     max-width: 450px;
     display: block;
     margin: auto;
+    padding: 1rem;
+
  }
 
  .banner-container .banner-header {
 
-    color: var(--dark-grey);
+    color: var(--black-);
     padding-top: 1rem;
     text-align: center;
+    font-size: xx-large;
     
  }
 
  .banner-container .banner-header .inverted {
 
-    color: var(--primary-color);
+    color: var(--blue-);
  }
 
 /* section */
  .section {
 
-    padding: 2rem;
+    padding: 0.5rem;
+    background-color: var(--blue-);
 
  }
  
@@ -140,21 +158,28 @@ hr {
  .ow {
 
 
-    background-color: var(--off-white);
+    background-color: var(--blue-);
     padding: 2rem;
    
  }
 
+ #tech-icons {
+
+    text-align: center;
+    padding: 2rem;
+    margin: 0.5rem;
+ }
  /* footer */
 
 .footer-container {
 
-    background-color: var(--primary-color);
+    background-color: var(--black-);
     text-align: center;
     border-top-right-radius: 0.5rem;
     padding: 0.5rem;
 
 }
+
 
 footer h2 {
 
@@ -164,4 +189,46 @@ footer h2 {
 footer ul {
 
     padding-inline-start: 0px;
+}
+
+
+
+   
+
+/* footer ends */
+
+/* projects */
+#projects-list{
+
+  padding: 1rem;
+  list-style: none;
+  background-color: var(--blue-);
+  
+
+}
+
+/* blogs */
+
+#blog-container {
+
+    color: whitesmoke;
+    font-size: x-large;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 1rem;
+    text-align: center;
+    background-color: var(--blue-);
+    padding: 9rem;
+
+}
+
+#readmore {
+
+    padding: 1rem;
+    text-align: center;
+    border-radius: 1rem;
+    background-color: var(--black-);
+    color: white;
+    width: 10%;
+    cursor: pointer;
 }
